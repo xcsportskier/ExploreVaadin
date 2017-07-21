@@ -1,4 +1,4 @@
-package com.udemy.vaadinspringnoot;
+package com.udemy.vaadinspringboot;
 
 import com.vaadin.annotations.Theme;
 import com.vaadin.server.VaadinRequest;

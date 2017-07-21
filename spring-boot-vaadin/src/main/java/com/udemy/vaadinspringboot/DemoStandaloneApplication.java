@@ -1,4 +1,4 @@
-package com.udemy.vaadinspringnoot;
+package com.udemy.vaadinspringboot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,12 +6,12 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
 
 @SpringBootApplication
-public class DemoApplication extends SpringBootServletInitializer {
+public class DemoStandaloneApplication extends SpringBootServletInitializer {
 	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
+		SpringApplication.run(DemoStandaloneApplication.class, args);
 	}
 
-	private static Class<DemoApplication> applicationClass = DemoApplication.class;
+	private static Class<DemoStandaloneApplication> applicationClass = DemoStandaloneApplication.class;
 
 	@Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
