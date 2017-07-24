@@ -1,11 +1,19 @@
 package com.udemy.vaadinspringboot.data;
 
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
+
+import org.hibernate.validator.constraints.NotEmpty;
+
 public class Student {
 
 	private Integer id;
 
+	@NotEmpty(message="Enter a value")
 	private String name;
 
+	@NotNull(message="Enter a value")
+	@Min(value=16, message="Age should be greater then 16")
 	private Integer age;
 
 	public Student() {
